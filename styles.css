@@ -23,6 +23,7 @@ body {
   color: var(--ink);
   font-family: Aptos, "Segoe UI", sans-serif;
   background: #edf1f5;
+  overflow-x: hidden;
 }
 
 button,
@@ -69,15 +70,43 @@ h1 {
 
 .header-actions {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  min-width: 0;
+}
+
+.header-primary,
+.header-secondary {
+  display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 10px;
+  min-width: 0;
+}
+
+.header-primary,
+.header-secondary,
+.exam-picker {
+  width: 100%;
+}
+
+.exam-picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.exam-picker select {
+  flex: 1 1 220px;
 }
 
 .select-label {
   color: var(--muted);
   font-size: 14px;
+  white-space: nowrap;
 }
 
 select,
@@ -88,6 +117,10 @@ button {
   background: var(--panel);
   color: var(--ink);
   padding: 0 12px;
+}
+
+select {
+  min-width: 0;
 }
 
 button {
@@ -110,6 +143,10 @@ button {
   color: white;
   font-weight: 700;
   text-decoration: none;
+}
+
+.label-compact {
+  display: none;
 }
 
 button.secondary,
@@ -207,6 +244,7 @@ button:disabled {
 .tab-bar {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
   padding: 10px 22px;
   border-bottom: 1px solid var(--line);
 }
@@ -227,6 +265,7 @@ button:disabled {
   border-color: var(--line);
   color: var(--ink);
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .part-tab.active {
@@ -239,6 +278,7 @@ button:disabled {
   min-height: 32px;
   padding: 0 14px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .tab.active {
@@ -1523,6 +1563,7 @@ textarea {
 
   .header-actions {
     justify-content: start;
+    width: 100%;
   }
 
   .layout {
@@ -1536,12 +1577,9 @@ textarea {
 
   .matcher-grid,
   .option-library,
-  .part-four-layout,
-  .listening-hero,
   .reading-question-grid,
   .reading-question-grid.compact,
   .listening-question-grid,
-  .listening-option-grid.image-options,
   .option-bank-grid {
     grid-template-columns: 1fr;
   }
@@ -1549,11 +1587,61 @@ textarea {
   .part-four-layout .option-bank {
     position: static;
   }
+
+  .question-map-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .answer-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 @media (max-width: 1180px) {
+  .app-header {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .header-brand,
+  .header-actions {
+    width: 100%;
+  }
+
+  .header-actions {
+    width: 100%;
+    align-items: stretch;
+    align-self: stretch;
+  }
+
+  .header-primary,
+  .header-secondary {
+    justify-content: flex-start;
+  }
+
+  .part-one-card,
+  .matcher-grid,
+  .part-four-layout,
+  .listening-hero,
   .writing-layout {
     grid-template-columns: 1fr;
+  }
+
+  .part-four-layout .option-bank {
+    position: static;
+  }
+
+  .listening-option-grid.image-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .part-five-list .reading-choice-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .question-map-grid {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
   .writing-prompt-panel {
@@ -1565,10 +1653,63 @@ textarea {
 }
 
 @media (max-width: 640px) {
-  .header-actions,
-  .header-actions select,
-  .header-actions button {
+  .app-header {
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .eyebrow {
+    display: none;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .select-label {
+    display: none;
+  }
+
+  .header-actions {
+    display: grid;
+    gap: 8px;
     width: 100%;
+  }
+
+  .header-primary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  .exam-picker {
+    min-width: 0;
+  }
+
+  .exam-picker select,
+  .header-primary button,
+  .header-secondary button,
+  .header-secondary .button-link {
+    width: 100%;
+    min-width: 0;
+    min-height: 34px;
+    white-space: nowrap;
+  }
+
+  .header-secondary {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .header-secondary .label-full {
+    display: none;
+  }
+
+  .header-secondary .label-compact {
+    display: inline;
   }
 
   .mode-bar {
@@ -1591,6 +1732,23 @@ textarea {
     max-height: 440px;
   }
 
+  .matcher-card-top,
+  .exam-part-title-row,
+  .writing-area-head,
+  .writing-score-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listening-option-grid.image-options,
+  .option-library {
+    grid-template-columns: 1fr;
+  }
+
+  .question-map-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .part-five-list .reading-choice-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1605,5 +1763,60 @@ textarea {
 
   .writing-textarea {
     min-height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .layout {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .app-header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .header-primary button,
+  .exam-picker select,
+  .header-secondary button,
+  .header-secondary .button-link {
+    min-height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+  }
+
+  .header-secondary {
+    gap: 6px;
+  }
+
+  #paperContent,
+  .mode-bar,
+  .tab-bar,
+  .part-nav {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .question-map-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .part-five-list .reading-choice-list {
+    grid-template-columns: 1fr;
+  }
+
+  .reading-choice.selectable-choice,
+  .part-one-choices .reading-choice {
+    padding: 8px;
+  }
+
+  .score-main {
+    font-size: 24px;
   }
 }

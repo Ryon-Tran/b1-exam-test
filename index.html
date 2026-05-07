@@ -8,18 +8,24 @@
 </head>
 <body>
   <header class="app-header">
-    <div>
+    <div class="header-brand">
       <p class="eyebrow">English Practice Lab</p>
       <h1>B1 Exam Practice</h1>
     </div>
     <div class="header-actions">
-      <label class="select-label" for="testSelect">Chọn đề</label>
-      <select id="testSelect"></select>
-      <button id="syncExcelButton" type="button" class="secondary">Đọc lại Excel</button>
-      <a class="button-link secondary" href="admin.html">Quản lý data</a>
-      <button id="mixButton" type="button">Tạo đề tổng hợp</button>
-      <button id="mockButton" type="button">Thi thử</button>
-      <button id="resetButton" type="button" class="secondary">Làm lại</button>
+      <div class="header-primary">
+        <div class="exam-picker">
+          <label class="select-label" for="testSelect">Chọn đề</label>
+          <select id="testSelect"></select>
+        </div>
+        <button id="mockButton" type="button">Thi thử</button>
+      </div>
+      <div class="header-secondary">
+        <button id="syncExcelButton" type="button" class="secondary"><span class="label-full">Đọc lại Excel</span><span class="label-compact">Đọc Excel</span></button>
+        <a class="button-link secondary" href="admin.html"><span class="label-full">Quản lý data</span><span class="label-compact">Quản lý</span></a>
+        <button id="mixButton" type="button"><span class="label-full">Tạo đề tổng hợp</span><span class="label-compact">Tạo đề</span></button>
+        <button id="resetButton" type="button" class="secondary">Làm lại</button>
+      </div>
     </div>
   </header>
 
