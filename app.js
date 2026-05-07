@@ -52,6 +52,411 @@ const listeningBlueprint = [
   },
 ];
 
+const speakingIntroQuestions = [
+  "What’s your name?",
+  "Where do you live/ come from?",
+  "Do you work or are you a student?",
+  "What do you do/ study?",
+];
+
+const speakingInterviewPromptsTest12 = [
+  "Do you like to travel?",
+  "What do you like to do on holiday?",
+  "Tell us about your hobbies and interests.",
+  "What do you like to do at the weekend?",
+  "What do you like to do to relax?",
+  "How often do you do exercise?",
+  "Tell us about the sports you like.",
+  "How often do you do sport?",
+  "What kind of sports do you play?",
+  "Where do you play sports?",
+  "Do you play sport with your family?",
+  "Where would you like to go for your next trip?",
+  "What activities do you enjoy when you're not working or studying?",
+  "What do you enjoy doing in your free time?",
+  "Do you play any sports on Sundays?",
+  "Do you like listening to music after a busy day?",
+  "Do you do exercise at the weekend?",
+  "Do you like play badminton?",
+  "Do you do sport at the weekend?",
+  "Do you play football?",
+  "Do you play sports at school?",
+  "Do you play sport with your brother and sister?",
+];
+
+const speakingInterviewPromptsTest34 = [
+  "Tell us about the sports you like.",
+  "How often do you do sport?",
+  "What kind of sports do you play?",
+  "Where do you play sports?",
+  "Do you play sport with your family?",
+  "Do you like to travel?",
+  "What do you like to do on holiday?",
+  "Tell us about your hobbies and interests.",
+  "What do you like to do at the weekend?",
+  "What do you like to do to relax?",
+  "How often do you do exercise?",
+  "Do you like play badminton?",
+  "Do you do sport at the weekend?",
+  "Do you play football?",
+  "Do you play sports at school?",
+  "Do you play sport with your brother and sister?",
+  "Where would you like to go for your next trip?",
+  "What activities do you enjoy when you're not working or studying?",
+  "What do you enjoy doing in your free time?",
+  "Do you play any sports on Sundays?",
+  "Do you like listening to music after a busy day?",
+  "Do you do exercise at the weekend?",
+];
+
+const speakingPicturePrompts = [
+  "Talk about the people / person.",
+  "Talk about the place.",
+  "Talk about other things in the picture.",
+];
+
+const speakingPractice = {
+  id: "speaking-april-2026",
+  title: "Đề nói ôn tháng 4",
+  tests: [
+    {
+      id: "test-1",
+      title: "Test 1",
+      parts: [
+        {
+          number: 1,
+          label: "Interview",
+          duration: "2-3 minutes",
+          candidateQuestions: speakingIntroQuestions,
+          prompts: speakingInterviewPromptsTest12,
+        },
+        {
+          number: 2,
+          label: "Photo description",
+          duration: "2-3 minutes",
+          candidates: [
+            {
+              name: "Candidate A",
+              code: "1A",
+              description: "It shows doing some cooking.",
+              image: "assets/speaking-april/test-1-part-2-a.jpeg",
+            },
+            {
+              name: "Candidate B",
+              code: "1B",
+              description: "It shows children at a party.",
+              image: "assets/speaking-april/test-1-part-2-b.jpeg",
+            },
+          ],
+          prompts: speakingPicturePrompts,
+        },
+        {
+          number: 3,
+          label: "Collaborative task",
+          duration: "3-4 minutes",
+          scenario: "A woman is going on a business trip for a few days. She is deciding what she needs to take with her.",
+          task: "Talk together about the different things she could take and say which one would be most important.",
+          image: "assets/speaking-april/test-1-part-3.png",
+          imageCaption: "Things a woman could take on a business trip",
+        },
+        {
+          number: 4,
+          label: "Follow-up discussion",
+          duration: "up to 2 minutes",
+          questions: [
+            "Do you travel much?",
+            "Do you find it easy to decide what to take when you travel?",
+            "Is it important to be organised before we make a long journey?",
+            "Do you prefer traveling alone or with others? Why?",
+            "What is your favorite mode of transportation for long journeys? Why?",
+          ],
+        },
+      ],
+    },
+    {
+      id: "test-2",
+      title: "Test 2",
+      parts: [
+        {
+          number: 1,
+          label: "Interview",
+          duration: "2-3 minutes",
+          candidateQuestions: speakingIntroQuestions,
+          prompts: speakingInterviewPromptsTest12,
+        },
+        {
+          number: 2,
+          label: "Photo description",
+          duration: "2-3 minutes",
+          candidates: [
+            {
+              name: "Candidate A",
+              code: "2A",
+              description: "It shows four people in a kitchen.",
+              image: "assets/speaking-april/test-2-part-2-a.jpeg",
+            },
+            {
+              name: "Candidate B",
+              code: "2B",
+              description: "It also shows people in a learning environment.",
+              image: "assets/speaking-april/test-2-part-2-b.jpeg",
+            },
+          ],
+          prompts: speakingPicturePrompts,
+        },
+        {
+          number: 3,
+          label: "Collaborative task",
+          duration: "3-4 minutes",
+          scenario: "A family are thinking of buying a pet for their young son. They want to get something that the boy can help take care of.",
+          task: "Talk together about the different pets they could get for their son and say which one would be best.",
+          image: "assets/speaking-april/test-2-part-3.png",
+          imageCaption: "A pet that would be suitable for a young boy",
+        },
+        {
+          number: 4,
+          label: "Follow-up discussion",
+          duration: "up to 2 minutes",
+          questions: [
+            "Do you have a pet? Why? / Why not?",
+            "Which do you think is the best pet? Why? / Why not?",
+            "Is it important for a child to have a pet? Why? / Why not?",
+            "What is the most unusual pet you have ever heard of?",
+            "What are the most popular pets in your country?",
+          ],
+        },
+      ],
+    },
+    {
+      id: "test-3",
+      title: "Test 3",
+      parts: [
+        {
+          number: 1,
+          label: "Interview",
+          duration: "2-3 minutes",
+          candidateQuestions: speakingIntroQuestions,
+          prompts: speakingInterviewPromptsTest34,
+        },
+        {
+          number: 2,
+          label: "Photo description",
+          duration: "2-3 minutes",
+          candidates: [
+            {
+              name: "Candidate A",
+              code: "3A",
+              description: "It shows three people outside.",
+              image: "assets/speaking-april/test-3-part-2-a.jpeg",
+            },
+            {
+              name: "Candidate B",
+              code: "3B",
+              description: "It also shows people eating out.",
+              image: "assets/speaking-april/test-3-part-2-b.jpeg",
+            },
+          ],
+          prompts: speakingPicturePrompts,
+        },
+        {
+          number: 3,
+          label: "Collaborative task",
+          duration: "3-4 minutes",
+          scenario: "A teenager is on his way home before dinner and wants to eat something on the way.",
+          task: "Talk together about the different things he could eat on the way home and say which one would be best.",
+          image: "assets/speaking-april/test-3-part-3.png",
+          imageCaption: "Some things a teenager could eat on his way home before dinner",
+        },
+        {
+          number: 4,
+          label: "Follow-up discussion",
+          duration: "up to 2 minutes",
+          questions: [
+            "Do you like to eat snacks? Why? / Why not?",
+            "What do you think are the best things to eat for snacks?",
+            "Is it important to eat three meals a day? Why? / Why not?",
+            "What snacks are popular in your country?",
+            "Do you think snacking is good or bad for your health? Why? / Why not?",
+          ],
+        },
+      ],
+    },
+    {
+      id: "test-4",
+      title: "Test 4",
+      parts: [
+        {
+          number: 1,
+          label: "Interview",
+          duration: "2-3 minutes",
+          candidateQuestions: speakingIntroQuestions,
+          prompts: speakingInterviewPromptsTest34,
+        },
+        {
+          number: 2,
+          label: "Photo description",
+          duration: "2-3 minutes",
+          candidates: [
+            {
+              name: "Candidate A",
+              code: "4A",
+              description: "It shows people in a family.",
+              image: "assets/speaking-april/test-4-part-2-a.jpeg",
+            },
+            {
+              name: "Candidate B",
+              code: "4B",
+              description: "It shows a group of people.",
+              image: "assets/speaking-april/test-4-part-2-b.jpeg",
+            },
+          ],
+          prompts: speakingPicturePrompts,
+        },
+        {
+          number: 3,
+          label: "Collaborative task",
+          duration: "3-4 minutes",
+          scenario: "A couple want to buy their six-year-old daughter a present for her birthday.",
+          task: "Talk together about the different things they could buy and say which one would be best.",
+          image: "assets/speaking-april/test-4-part-3.png",
+          imageCaption: "Presents for a girl's 6th birthday",
+        },
+        {
+          number: 4,
+          label: "Follow-up discussion",
+          duration: "up to 2 minutes",
+          questions: [
+            "Do you remember birthdays when you were young? Why? / Why not?",
+            "Can you remember any presents you were given when you were young? Why? / Why not?",
+            "Is it important for children to have a birthday party? Why? / Why not?",
+            "Do you prefer giving or receiving presents? Why?",
+            "How do you feel when you receive a present you don't like?",
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const speakingQuestionSamples = {
+  "What’s your name?": "My name is [your name].",
+  "Where do you live/ come from?": "I live in [your city]. I come from [your hometown].",
+  "Do you work or are you a student?": "I’m a student right now.",
+  "What do you do/ study?": "I study English at school.",
+  "Do you like to travel?": "Yes, I do. I like to travel because it is fun and relaxing.",
+  "What do you like to do on holiday?": "I like to go out, take photos, and try local food.",
+  "Tell us about your hobbies and interests.": "I enjoy listening to music and reading books in my free time.",
+  "What do you like to do at the weekend?": "At the weekend, I usually meet my friends and rest at home.",
+  "What do you like to do to relax?": "I like listening to music and taking a short walk.",
+  "How often do you do exercise?": "I do exercise about three times a week.",
+  "Tell us about the sports you like.": "I like badminton because it is fun and good for my health.",
+  "How often do you do sport?": "I do sport two or three times a week.",
+  "What kind of sports do you play?": "I usually play badminton and sometimes football.",
+  "Where do you play sports?": "I usually play sports at school or in a park near my house.",
+  "Do you play sport with your family?": "Sometimes I do. I often play badminton with my brother.",
+  "Where would you like to go for your next trip?": "I’d like to go to Da Nang because it is beautiful and the food is great.",
+  "What activities do you enjoy when you're not working or studying?": "I enjoy listening to music, watching films, and chatting with my friends.",
+  "What do you enjoy doing in your free time?": "In my free time, I like reading, listening to music, and resting.",
+  "Do you play any sports on Sundays?": "Yes, sometimes I do. I often play badminton on Sundays.",
+  "Do you like listening to music after a busy day?": "Yes, I do. It helps me feel calm and happy.",
+  "Do you do exercise at the weekend?": "Yes, I do. I usually walk or play badminton at the weekend.",
+  "Do you like play badminton?": "Yes, I do. I like badminton because it is fun and easy to play.",
+  "Do you do sport at the weekend?": "Yes, I do. I often do sport with my friends.",
+  "Do you play football?": "Sometimes I do. I play football with my friends after school.",
+  "Do you play sports at school?": "Yes, I do. I usually play sports during break time or after class.",
+  "Do you play sport with your brother and sister?": "Yes, sometimes. We often play together in the evening.",
+  "Do you travel much?": "Not very much, but I like short trips when I have free time.",
+  "Do you find it easy to decide what to take when you travel?": "Yes, it is quite easy because I usually make a short list first.",
+  "Is it important to be organised before we make a long journey?": "Yes, I think so because it saves time and avoids stress.",
+  "Do you prefer traveling alone or with others? Why?": "I prefer traveling with others because it is more fun and safer.",
+  "What is your favorite mode of transportation for long journeys? Why?": "I like traveling by plane because it is fast and comfortable.",
+  "Do you have a pet? Why? / Why not?": "No, I don’t, because my home is small and I am quite busy.",
+  "Which do you think is the best pet? Why? / Why not?": "I think a dog is the best pet because it is friendly and loyal.",
+  "Is it important for a child to have a pet? Why? / Why not?": "Yes, I think so because pets can teach children to be kind and responsible.",
+  "What is the most unusual pet you have ever heard of?": "I once heard about people keeping snakes as pets, and I think that is unusual.",
+  "What are the most popular pets in your country?": "In my country, dogs and cats are the most popular pets.",
+  "Do you like to eat snacks? Why? / Why not?": "Yes, I do, because snacks are tasty and convenient.",
+  "What do you think are the best things to eat for snacks?": "I think fruit and yogurt are the best snacks because they are healthy.",
+  "Is it important to eat three meals a day? Why? / Why not?": "Yes, I think it is important because it gives us energy for the day.",
+  "What snacks are popular in your country?": "In my country, chips, fruit, and sweet cakes are very popular.",
+  "Do you think snacking is good or bad for your health? Why? / Why not?": "I think it can be good if we choose healthy food and do not eat too much.",
+  "Do you remember birthdays when you were young? Why? / Why not?": "Yes, I do, because I was always happy to get gifts and eat cake.",
+  "Can you remember any presents you were given when you were young? Why? / Why not?": "Yes, I remember getting a toy bear because I liked it very much.",
+  "Is it important for children to have a birthday party? Why? / Why not?": "Yes, I think so because it gives them happy memories.",
+  "Do you prefer giving or receiving presents? Why?": "I prefer giving presents because I enjoy making other people happy.",
+  "How do you feel when you receive a present you don't like?": "I still feel thankful because the person was kind to give me something.",
+};
+
+const speakingPictureSamples = {
+  "1A": {
+    people: "I can see a person in a kitchen. He is cooking food.",
+    place: "The place looks like a clean and bright kitchen.",
+    other: "There is food and kitchen equipment, so the picture feels calm and busy.",
+  },
+  "1B": {
+    people: "I can see some children at a party. They look happy and excited.",
+    place: "The place looks like a party room with a fun atmosphere.",
+    other: "There may be food, decorations, and games, so the picture feels lively.",
+  },
+  "2A": {
+    people: "I can see four people in a kitchen. They are cooking or preparing food together.",
+    place: "The place looks like a kitchen, and it seems bright and friendly.",
+    other: "There is food and cooking equipment, and everyone looks busy.",
+  },
+  "2B": {
+    people: "I can see some people in a learning environment. They seem focused and interested.",
+    place: "The place looks like a classroom or a study room.",
+    other: "There may be books, tables, and learning tools, so it feels quiet and useful.",
+  },
+  "3A": {
+    people: "I can see three people outside. They are spending time together.",
+    place: "The place is outdoors, and it looks open and pleasant.",
+    other: "The weather seems nice, and the picture feels relaxed and friendly.",
+  },
+  "3B": {
+    people: "I can see some people eating out. They are sitting together and having a meal.",
+    place: "The place looks like a cafe or a restaurant.",
+    other: "There is food on the table, and the atmosphere seems warm and social.",
+  },
+  "4A": {
+    people: "I can see family members together. They look close and happy.",
+    place: "The place looks comfortable and friendly, maybe at home.",
+    other: "They are spending time with each other, so the picture feels warm.",
+  },
+  "4B": {
+    people: "I can see a group of people together. They may be talking or doing an activity.",
+    place: "The place looks busy and active.",
+    other: "The mood seems cheerful, and the people look interested in what they are doing.",
+  },
+};
+
+const speakingCollabSamples = {
+  "test-1": [
+    "She could take a few useful things for the trip.",
+    "I think the most important thing is a laptop because she can work on it.",
+    "Some other things are helpful too, but a laptop is the best choice for me.",
+    "What do you think?",
+  ],
+  "test-2": [
+    "There are several pets they could choose for their son.",
+    "I think a small and easy pet is better for a young boy.",
+    "It should be friendly and easy to look after.",
+    "For me, that is the best choice. What do you think?",
+  ],
+  "test-3": [
+    "There are several things he could eat on the way home.",
+    "I think he should choose something quick and healthy.",
+    "It is better to eat a light snack before dinner.",
+    "For me, that is the best choice. What do you think?",
+  ],
+  "test-4": [
+    "There are many presents they could buy for their daughter.",
+    "I think the best present should be fun and useful.",
+    "It should also match her age and interests.",
+    "For me, that is the best choice. What do you think?",
+  ],
+};
+
 const elements = {
   testSelect: document.querySelector("#testSelect"),
   syncExcelButton: document.querySelector("#syncExcelButton"),
@@ -79,6 +484,7 @@ let examResult = null;
 let startedAt = Date.now();
 let timerId = null;
 let isSubmittingMock = false;
+let speakingNotes = {};
 
 function normalise(value) {
   return String(value || "")
@@ -194,6 +600,83 @@ function loadAnswers() {
   } catch {
     return {};
   }
+}
+
+function speakingStorageKey() {
+  return `${speakingPractice.id}:notes`;
+}
+
+function loadSpeakingNotes() {
+  try {
+    return JSON.parse(localStorage.getItem(speakingStorageKey()) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function saveSpeakingNotes() {
+  localStorage.setItem(speakingStorageKey(), JSON.stringify(speakingNotes));
+}
+
+function speakingTests() {
+  return speakingPractice.tests;
+}
+
+function speakingCommonPartSource() {
+  return speakingTests()[0] || { parts: [] };
+}
+
+function speakingParts() {
+  return speakingCommonPartSource().parts || [];
+}
+
+function speakingPartMeta(partNumber) {
+  return speakingParts().find((part) => part.number === partNumber) || speakingParts()[0];
+}
+
+function speakingNoteKey(partNumber) {
+  return `part:${partNumber}`;
+}
+
+function speakingNoteValue(partNumber) {
+  return speakingNotes[speakingNoteKey(partNumber)] || "";
+}
+
+function setSpeakingNote(partNumber, value) {
+  speakingNotes[speakingNoteKey(partNumber)] = value;
+  saveSpeakingNotes();
+}
+
+function clearSpeakingTestNotes() {
+  Object.keys(speakingNotes)
+    .filter((key) => key.startsWith("part:"))
+    .forEach((key) => {
+      delete speakingNotes[key];
+    });
+  saveSpeakingNotes();
+}
+
+function speakingPartBlocks(partNumber) {
+  return speakingTests()
+    .map((test) => ({
+      testId: test.id,
+      testTitle: test.title,
+      part: test.parts.find((item) => item.number === partNumber),
+    }))
+    .filter((item) => item.part);
+}
+
+function speakingInterviewPrompts() {
+  const seen = new Set();
+  const merged = [];
+  speakingPartBlocks(1).forEach(({ part }) => {
+    (part.prompts || []).forEach((prompt) => {
+      if (seen.has(prompt)) return;
+      seen.add(prompt);
+      merged.push(prompt);
+    });
+  });
+  return merged;
 }
 
 function isMockExam(exam = activeExam) {
@@ -363,7 +846,9 @@ function resultForTab(tab = activeTab) {
 
 function shouldShowScoreBox(tab = activeTab) {
   if (!examResult) return false;
-  return examResult.mode === "mock" ? tab !== "writing" : examResult.mode === tab;
+  return examResult.mode === "mock"
+    ? tab === "reading" || tab === "listening"
+    : examResult.mode === tab;
 }
 
 function setActiveTabView(nextTab) {
@@ -379,6 +864,7 @@ function setActiveTabView(nextTab) {
 function render() {
   if (!activeExam) return;
   document.body.classList.toggle("writing-mode", activeTab === "writing");
+  document.body.classList.toggle("speaking-mode", activeTab === "speaking");
 
   if (activeTab === "listening") {
     elements.paperTitle.textContent = isMockExam()
@@ -394,6 +880,9 @@ function render() {
     elements.paperMeta.textContent = isMockExam()
       ? "2 bài viết | Khi đủ cả Reading, Listening và Writing, bấm Nộp thi thử để chấm tổng điểm."
       : "2 bài viết | Có thể bấm Chấm AI để xem điểm, nhận xét và gợi ý chỉnh sửa.";
+  } else if (activeTab === "speaking") {
+    elements.paperTitle.textContent = `Speaking - ${speakingPractice.title}`;
+    elements.paperMeta.textContent = "4 phần | Part 1 dùng chung | Part 2-4 gộp tất cả đề để luyện liên tục.";
   } else {
     elements.paperTitle.textContent = isMockExam()
       ? "Reading - Thi thử tổng hợp"
@@ -422,6 +911,10 @@ function renderPaper() {
     renderListening();
     return;
   }
+  if (activeTab === "speaking") {
+    renderSpeaking();
+    return;
+  }
 
   const part = activeExam.parts.find((item) => item.number === activePart) || activeExam.parts[0];
   if (!part) return;
@@ -434,16 +927,32 @@ function renderPaper() {
 function renderPartNavigation() {
   elements.partNav.innerHTML = "";
   if (!activeExam) return;
+  elements.partNav.setAttribute(
+    "aria-label",
+    activeTab === "speaking"
+      ? "Chọn phần Speaking"
+      : activeTab === "listening"
+        ? "Chọn phần Listening"
+        : "Chọn phần Reading"
+  );
 
-  const parts = activeTab === "listening" ? listeningParts() : activeExam.parts;
+  const parts = activeTab === "listening"
+    ? listeningParts()
+    : activeTab === "speaking"
+      ? speakingParts()
+      : activeExam.parts;
   const ranges = activeTab === "listening" ? listeningPartRanges : partRanges;
 
   parts.forEach((part) => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = `part-tab${part.number === activePart ? " active" : ""}`;
-    const [start, end] = ranges[part.number];
-    button.textContent = `Part ${part.number} (${start}-${end})`;
+    if (activeTab === "speaking") {
+      button.textContent = `Part ${part.number} - ${part.label}`;
+    } else {
+      const [start, end] = ranges[part.number];
+      button.textContent = `Part ${part.number} (${start}-${end})`;
+    }
     button.addEventListener("click", () => {
       activePart = part.number;
       elements.scoreBox.hidden = !shouldShowScoreBox();
@@ -1484,6 +1993,452 @@ function renderWriting() {
   elements.paperContent.append(box);
 }
 
+function renderSpeaking() {
+  const part = speakingPartMeta(activePart);
+  if (!part) return;
+
+  const box = document.createElement("div");
+  box.className = "speaking-box";
+  if (part.number === 1) box.append(renderSpeakingWarmUp());
+  box.append(renderSpeakingContent(part), renderSpeakingNotes(part.number));
+  elements.paperContent.append(box);
+}
+
+function renderSpeakingOverview() {
+  const section = document.createElement("section");
+  section.className = "speaking-panel speaking-overview-panel";
+  section.innerHTML = `
+    <div class="speaking-panel-header">
+      <div>
+        <h3>Lộ trình luyện Speaking</h3>
+        <p>Hiển thị toàn bộ 4 part trên một trang. Part 2, 3, 4 đã gộp đủ các đề và có vạch ngăn để dễ theo dõi.</p>
+      </div>
+    </div>
+  `;
+
+  const chips = document.createElement("div");
+  chips.className = "speaking-check-row";
+  [
+    "Warm-up chung",
+    "Part 1 câu mẫu ngắn",
+    "Part 2 đủ 4 test",
+    "Part 3 đủ 4 test",
+    "Part 4 đủ 4 test",
+  ].forEach((text) => {
+    const chip = document.createElement("span");
+    chip.className = "speaking-check-chip";
+    chip.textContent = text;
+    chips.append(chip);
+  });
+
+  section.append(chips);
+  return section;
+}
+
+function renderSpeakingWarmUp() {
+  const section = document.createElement("section");
+  section.className = "speaking-panel";
+
+  const card = document.createElement("article");
+  card.className = "speaking-card speaking-card-strong";
+  card.innerHTML = `
+    <p class="speaking-section-kicker">Warm-up</p>
+    <h4>Áp dụng cho cả Candidate A và Candidate B</h4>
+    <p class="speaking-inline-copy">Trả lời ngắn gọn, tự nhiên, ưu tiên thông tin thật của bạn. Mỗi câu đều có mẫu ngắn để học nhanh.</p>
+  `;
+
+  const list = document.createElement("div");
+  list.className = "speaking-prompt-grid";
+  speakingIntroQuestions.forEach((question) => {
+    const item = renderSpeakingQuestionCard(question);
+    list.append(item);
+  });
+
+  card.append(list);
+  section.append(card);
+  return section;
+}
+
+function speakingSampleForQuestion(question) {
+  return speakingQuestionSamples[question] || "I think so because it is simple, useful, and easy for me.";
+}
+
+function speakingPictureSampleForCandidate(code) {
+  return speakingPictureSamples[code] || {
+    people: "I can see some people in the picture.",
+    place: "The place looks nice and comfortable.",
+    other: "The picture feels natural and interesting.",
+  };
+}
+
+function speakingCollabSampleForTest(testId) {
+  return speakingCollabSamples[testId] || [
+    "There are several options in this picture.",
+    "I think one option is more useful than the others.",
+    "It is practical and easy to choose for this situation.",
+    "For me, that is the best choice. What do you think?",
+  ];
+}
+
+function renderSpeakingSampleBox(lines, label = "Sample answer") {
+  const items = Array.isArray(lines) ? lines : [lines];
+  const box = document.createElement("div");
+  box.className = `speaking-sample-box${items.length === 1 ? " compact" : ""}`;
+
+  if (items.length === 1) {
+    const line = document.createElement("p");
+    line.className = "speaking-sample-inline";
+    const title = document.createElement("strong");
+    title.textContent = `${label}: `;
+    line.append(title, document.createTextNode(items[0]));
+    box.append(line);
+    return box;
+  }
+
+  const title = document.createElement("strong");
+  title.className = "speaking-sample-label";
+  title.textContent = label;
+  box.append(title);
+
+  items.forEach((line) => {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = line;
+    box.append(paragraph);
+  });
+
+  return box;
+}
+
+function renderSpeakingPartDivider(title) {
+  const divider = document.createElement("div");
+  divider.className = "speaking-part-divider";
+
+  const tag = document.createElement("span");
+  tag.className = "speaking-part-divider-tag";
+  tag.textContent = title;
+
+  divider.append(tag);
+  return divider;
+}
+
+function renderSpeakingQuestionCard(question) {
+  const item = document.createElement("article");
+  item.className = "speaking-prompt-card speaking-prompt-card-compact";
+
+  const row = document.createElement("div");
+  row.className = "speaking-question-row";
+
+  const badge = renderSpeakingPromptBadge();
+  badge.className = "speaking-question-badge";
+
+  const questionText = document.createElement("p");
+  questionText.className = "speaking-question-text";
+  questionText.textContent = question;
+
+  row.append(badge, questionText);
+  item.append(row, renderSpeakingSampleBox(speakingSampleForQuestion(question), "Câu mẫu"));
+  return item;
+}
+
+function renderSpeakingPromptBadge() {
+  const badge = document.createElement("span");
+  badge.textContent = "Q";
+  return badge;
+}
+
+function renderSpeakingContent(part) {
+  if (part.number === 1) return renderSpeakingInterview(part);
+  if (part.number === 2) return renderSpeakingPictures(part);
+  if (part.number === 3) return renderSpeakingCollaboration(part);
+  return renderSpeakingFollowUp(part);
+}
+
+function renderSpeakingCoach(part) {
+  const card = document.createElement("section");
+  card.className = "speaking-coach";
+
+  const header = document.createElement("div");
+  header.className = "speaking-section-top";
+  header.innerHTML = `
+    <div>
+      <p class="speaking-section-kicker">Practice focus</p>
+      <h3>Nhịp làm Part ${part.number}</h3>
+    </div>
+    <span class="speaking-inline-note">${escapeHtml(part.duration)}</span>
+  `;
+
+  const current = document.createElement("p");
+  current.className = "speaking-inline-copy";
+  current.textContent = part.number === 1
+    ? "Part 1 dùng chung, không tách theo test."
+    : `Part ${part.number} hiển thị liên tiếp ${speakingTests().length} đề để luyện một mạch.`;
+
+  const list = document.createElement("ol");
+  list.className = "speaking-coach-list";
+  speakingTipsForPart(part.number).forEach((tip) => {
+    const item = document.createElement("li");
+    item.textContent = tip;
+    list.append(item);
+  });
+
+  card.append(header, current, list);
+  return card;
+}
+
+function speakingTipsForPart(partNumber) {
+  if (partNumber === 1) {
+    return [
+      "Mở đầu bằng câu ngắn, rõ chủ ngữ và động từ.",
+      "Mỗi câu hỏi trả lời 1-2 ý, thêm ví dụ nhỏ nếu cần.",
+      "Nếu bí ý, đổi sang nói về thói quen hiện tại của bạn.",
+    ];
+  }
+  if (partNumber === 2) {
+    return [
+      "Bắt đầu từ people, sau đó place, rồi activity.",
+      "Dùng hiện tại tiếp diễn khi mô tả hành động trong ảnh.",
+      "Kết lại bằng cảm nhận chung về không khí của bức ảnh.",
+    ];
+  }
+  if (partNumber === 3) {
+    return [
+      "Nêu 2-3 lựa chọn trước khi chốt đáp án tốt nhất.",
+      "So sánh bằng because, but, more useful, cheaper, easier.",
+      "Khi chốt, nhắc lại đúng nhu cầu của đề bài.",
+    ];
+  }
+  return [
+    "Trả lời trực tiếp câu hỏi trước, rồi mới giải thích.",
+    "Ưu tiên nêu reason + example ngắn thay vì nói quá dài.",
+    "Nếu được hỏi lại, có thể dùng In my opinion hoặc I think.",
+  ];
+}
+
+function renderSpeakingInterview(part) {
+  const section = document.createElement("section");
+  section.className = "speaking-panel";
+
+  const header = document.createElement("div");
+  header.className = "speaking-panel-header";
+  header.innerHTML = `
+    <div>
+      <h3>Part 1 - ${escapeHtml(part.label)}</h3>
+      <p>Sau phần warm-up chung, chuyển sang các câu hỏi mở rộng về đời sống hằng ngày.</p>
+    </div>
+    <span class="speaking-duration">${escapeHtml(part.duration)}</span>
+  `;
+  section.append(header);
+
+  const prompts = document.createElement("article");
+  prompts.className = "speaking-card";
+  prompts.innerHTML = `
+    <p class="speaking-section-kicker">Open prompts</p>
+    <h4>Câu hỏi mở rộng dùng chung</h4>
+  `;
+  const promptGrid = document.createElement("div");
+  promptGrid.className = "speaking-prompt-grid";
+  speakingInterviewPrompts().forEach((question) => {
+    promptGrid.append(renderSpeakingQuestionCard(question));
+  });
+  prompts.append(promptGrid);
+  section.append(prompts);
+  return section;
+}
+
+function renderSpeakingPictures(part) {
+  const section = document.createElement("section");
+  section.className = "speaking-panel";
+
+  const header = document.createElement("div");
+  header.className = "speaking-panel-header";
+  header.innerHTML = `
+    <div>
+      <h3>Part 2 - ${escapeHtml(part.label)}</h3>
+      <p>Mỗi người nói một ảnh riêng. Hãy đi từ người, nơi chốn, hoạt động rồi mới thêm cảm nhận chung.</p>
+    </div>
+    <span class="speaking-duration">${escapeHtml(part.duration)}</span>
+  `;
+  section.append(header);
+  speakingPartBlocks(2).forEach(({ testTitle, part: partBlock }) => {
+    section.append(renderSpeakingPartDivider(testTitle));
+
+    const promptRow = document.createElement("div");
+    promptRow.className = "speaking-check-row";
+    (partBlock.prompts || []).forEach((prompt) => {
+      const item = document.createElement("span");
+      item.className = "speaking-check-chip";
+      item.textContent = prompt;
+      promptRow.append(item);
+    });
+    section.append(promptRow);
+
+    const grid = document.createElement("div");
+    grid.className = "speaking-picture-grid";
+
+    partBlock.candidates.forEach((candidate) => {
+      const sample = speakingPictureSampleForCandidate(candidate.code);
+      const card = document.createElement("article");
+      card.className = "speaking-card speaking-picture-card";
+
+      const top = document.createElement("div");
+      top.className = "speaking-picture-head";
+      top.innerHTML = `
+        <div class="speaking-picture-meta">
+          <strong>${escapeHtml(candidate.name)}</strong>
+          <span>${escapeHtml(candidate.code)}</span>
+        </div>
+        <p>${escapeHtml(candidate.description)}</p>
+      `;
+
+      const imageFrame = document.createElement("div");
+      imageFrame.className = "speaking-image-frame";
+      const image = document.createElement("img");
+      image.src = candidate.image;
+      image.alt = `${candidate.name} ${candidate.code}`;
+      imageFrame.append(image);
+
+      const note = document.createElement("p");
+      note.className = "speaking-inline-copy";
+      note.textContent = "Người còn lại chỉ nghe, không chen vào khi bạn đang mô tả ảnh.";
+
+      const sampleBox = renderSpeakingSampleBox([
+        `People: ${sample.people}`,
+        `Place: ${sample.place}`,
+        `Other things: ${sample.other}`,
+      ], "Câu mẫu ngắn");
+
+      card.append(top, imageFrame, note, sampleBox);
+      grid.append(card);
+    });
+
+    section.append(grid);
+  });
+  return section;
+}
+
+function renderSpeakingCollaboration(part) {
+  const section = document.createElement("section");
+  section.className = "speaking-panel";
+
+  const header = document.createElement("div");
+  header.className = "speaking-panel-header";
+  header.innerHTML = `
+    <div>
+      <h3>Part 3 - ${escapeHtml(part.label)}</h3>
+      <p>Thảo luận cùng nhau rồi đi đến một lựa chọn cuối cùng. Đây là part cần phối hợp, không phải nói một mình.</p>
+    </div>
+    <span class="speaking-duration">${escapeHtml(part.duration)}</span>
+  `;
+
+  section.append(header);
+
+  speakingPartBlocks(3).forEach(({ testId, testTitle, part: partBlock }) => {
+    section.append(renderSpeakingPartDivider(testTitle));
+
+    const layout = document.createElement("div");
+    layout.className = "speaking-collab-layout";
+
+    const scenario = document.createElement("article");
+    scenario.className = "speaking-card speaking-card-strong speaking-scenario";
+    scenario.innerHTML = `
+      <p class="speaking-scenario-kicker">Situation</p>
+      <h4>${escapeHtml(partBlock.imageCaption)}</h4>
+      <p>${escapeHtml(partBlock.scenario)}</p>
+      <p><strong>Task:</strong> ${escapeHtml(partBlock.task)}</p>
+    `;
+
+    const steps = document.createElement("div");
+    steps.className = "speaking-step-grid";
+    [
+      "Nêu nhanh các lựa chọn bạn nhìn thấy.",
+      "So sánh ưu và nhược điểm của từng lựa chọn.",
+      "Chốt phương án phù hợp nhất với đúng nhu cầu đề bài.",
+    ].forEach((text, index) => {
+      const item = document.createElement("article");
+      item.className = "speaking-step-card";
+      item.innerHTML = `
+        <span>${index + 1}</span>
+        <p>${escapeHtml(text)}</p>
+      `;
+      steps.append(item);
+    });
+    scenario.append(steps);
+    scenario.append(renderSpeakingSampleBox(speakingCollabSampleForTest(testId), "Mẫu nói ngắn"));
+
+    const imageWrap = document.createElement("figure");
+    imageWrap.className = "speaking-scene-figure";
+    const image = document.createElement("img");
+    image.src = partBlock.image;
+    image.alt = partBlock.imageCaption;
+    const caption = document.createElement("figcaption");
+    caption.textContent = partBlock.imageCaption;
+    imageWrap.append(image, caption);
+
+    layout.append(scenario, imageWrap);
+    section.append(layout);
+  });
+  return section;
+}
+
+function renderSpeakingFollowUp(part) {
+  const section = document.createElement("section");
+  section.className = "speaking-panel";
+
+  const header = document.createElement("div");
+  header.className = "speaking-panel-header";
+  header.innerHTML = `
+    <div>
+      <h3>Part 4 - ${escapeHtml(part.label)}</h3>
+      <p>Trả lời sâu hơn về chủ đề vừa thảo luận. Mỗi câu nên có quan điểm, lý do và một ví dụ nhỏ.</p>
+    </div>
+    <span class="speaking-duration">${escapeHtml(part.duration)}</span>
+  `;
+
+  section.append(header);
+
+  speakingPartBlocks(4).forEach(({ testTitle, part: partBlock }) => {
+    section.append(renderSpeakingPartDivider(testTitle));
+
+    const grid = document.createElement("div");
+    grid.className = "speaking-followup-grid";
+    partBlock.questions.forEach((question) => {
+      const card = renderSpeakingQuestionCard(question);
+      card.classList.add("speaking-followup-card");
+      grid.append(card);
+    });
+
+    section.append(grid);
+  });
+  return section;
+}
+
+function renderSpeakingNotes(partNumber) {
+  const wrap = document.createElement("section");
+  wrap.className = "speaking-notes-panel";
+
+  const heading = document.createElement("div");
+  heading.className = "speaking-notes-head";
+  heading.innerHTML = `
+    <strong>Ghi nhanh cho Part ${partNumber}</strong>
+    <span>Lưu tự động trên máy này</span>
+  `;
+
+  const helper = document.createElement("p");
+  helper.className = "speaking-inline-copy";
+  helper.textContent = "Ghi từ khóa, cấu trúc câu hoặc vài câu bạn muốn học thuộc cho part này.";
+
+  const textarea = document.createElement("textarea");
+  textarea.className = "speaking-notes";
+  textarea.value = speakingNoteValue(partNumber);
+  textarea.placeholder = "Ghi nhanh từ vựng, ý chính, cấu trúc câu hoặc câu mẫu bạn muốn dùng cho part này...";
+  textarea.addEventListener("input", () => {
+    setSpeakingNote(partNumber, textarea.value);
+  });
+
+  wrap.append(heading, helper, textarea);
+  return wrap;
+}
+
 function writingArea(name, label) {
   const wrap = document.createElement("section");
   wrap.className = "writing-area";
@@ -1678,11 +2633,20 @@ function syncMockSubmitPanel() {
 
 function renderAnswerSheet() {
   elements.answerSheet.innerHTML = "";
+  elements.submitButton.hidden = false;
   elements.submitButton.textContent = isMockExam() ? "Nộp thi thử" : "Nộp bài";
   const mockStatus = isMockExam() ? mockCompletionStatus() : null;
   elements.submitButton.disabled = activeTab === "writing"
+    || activeTab === "speaking"
     || Boolean(isSubmittingMock)
     || Boolean(isMockExam() && !mockStatus?.complete);
+
+  if (activeTab === "speaking") {
+    elements.answerHeadTitle.textContent = "Speaking";
+    elements.progressText.textContent = `Part ${activePart}/4`;
+    elements.submitButton.hidden = true;
+    return;
+  }
 
   if (activeTab === "writing") {
     elements.answerHeadTitle.textContent = "Writing";
@@ -1838,6 +2802,8 @@ function updateProgress() {
     syncMockSubmitPanel();
     if (activeTab === "writing") {
       elements.progressText.textContent = `${status.readingDone}/32 R | ${status.listeningDone}/25 L | ${status.writingReady ? "W ok" : "W chưa đủ"}`;
+    } else if (activeTab === "speaking") {
+      elements.progressText.textContent = `Part ${activePart}/4`;
     } else if (activeTab === "listening") {
       elements.progressText.textContent = `${status.listeningDone}/25 câu | R ${status.readingDone}/32 | W ${status.writingReady ? "ok" : "chưa đủ"}`;
     } else {
@@ -1849,6 +2815,11 @@ function updateProgress() {
 
   if (activeTab === "writing") {
     elements.progressText.textContent = "2 bài";
+    return;
+  }
+
+  if (activeTab === "speaking") {
+    elements.progressText.textContent = `Part ${activePart}/4`;
     return;
   }
 
@@ -2005,6 +2976,10 @@ function renderListeningPartReview(partNumber, reviewResult = resultForTab("list
 }
 
 async function scoreExam() {
+  if (activeTab === "speaking") {
+    return;
+  }
+
   if (isMockExam()) {
     await scoreMockExam();
     return;
@@ -2338,6 +3313,12 @@ function escapeHtml(value) {
 }
 
 function resetExam() {
+  if (activeTab === "speaking") {
+    clearSpeakingTestNotes();
+    render();
+    return;
+  }
+
   answers = {};
   examResult = null;
   localStorage.removeItem(storageKey());
@@ -2470,6 +3451,8 @@ function startTimer() {
 }
 
 async function init() {
+  speakingNotes = loadSpeakingNotes();
+
   try {
     await loadExamData();
   } catch (error) {
