@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B1 Exam Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">English Practice Lab</p>
+      <h1>B1 Exam Practice</h1>
+    </div>
+    <div class="header-actions">
+      <label class="select-label" for="testSelect">Chọn đề</label>
+      <select id="testSelect"></select>
+      <button id="syncExcelButton" type="button" class="secondary">Đọc lại Excel</button>
+      <a class="button-link secondary" href="admin.html">Quản lý data</a>
+      <button id="mixButton" type="button">Tạo đề tổng hợp</button>
+      <button id="mockButton" type="button">Thi thử</button>
+      <button id="resetButton" type="button" class="secondary">Làm lại</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="paper-panel" aria-label="Đề thi">
+      <div class="mode-bar">
+        <div>
+          <h2 id="paperTitle">Reading</h2>
+          <p id="paperMeta">Chọn đáp án bên phải rồi bấm nộp bài để chấm.</p>
+        </div>
+        <div class="timer" id="timer">00:00</div>
+      </div>
+      <div class="tab-bar" role="tablist">
+        <button class="tab active" type="button" data-tab="reading">Reading</button>
+        <button class="tab" type="button" data-tab="listening">Listening</button>
+        <button class="tab" type="button" data-tab="writing">Writing</button>
+      </div>
+      <div id="partNav" class="part-nav" aria-label="Chọn phần Reading"></div>
+      <div id="paperContent"></div>
+    </section>
+
+    <aside class="answer-panel" aria-label="Phiếu trả lời">
+      <div class="answer-head">
+        <h2>Answer Sheet</h2>
+        <p id="progressText">0/32 câu</p>
+      </div>
+      <div id="answerSheet" class="answer-sheet"></div>
+      <button id="submitButton" type="button" class="submit">Nộp bài</button>
+      <div id="scoreBox" class="score-box" hidden></div>
+    </aside>
+  </main>
+
+  <template id="partTemplate">
+    <article class="exam-part">
+      <div class="part-source"></div>
+      <div class="part-images"></div>
+      <div class="part-lines"></div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

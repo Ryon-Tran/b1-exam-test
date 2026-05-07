@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quản lý dữ liệu đề thi</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-page">
+  <header class="app-header admin-header">
+    <div>
+      <p class="eyebrow">English Practice Lab</p>
+      <h1>Quản lý dữ liệu</h1>
+      <p class="admin-subtitle">Sửa câu hỏi, lựa chọn, đáp án và giải thích trực tiếp trên Excel.</p>
+    </div>
+    <div class="header-actions">
+      <a class="button-link secondary" href="index.html">Về trang luyện thi</a>
+      <button id="reloadButton" type="button" class="secondary">Tải lại dữ liệu</button>
+      <button id="openExcelButton" type="button">Mở Excel</button>
+    </div>
+  </header>
+
+  <main class="admin-layout">
+    <section class="admin-panel">
+      <div class="admin-toolbar">
+        <label>
+          Đề
+          <select id="examFilter"></select>
+        </label>
+        <label>
+          Kỹ năng
+          <select id="skillFilter"></select>
+        </label>
+        <label>
+          Part
+          <select id="partFilter"></select>
+        </label>
+        <label class="search-field">
+          Tìm kiếm
+          <input id="searchInput" type="search" placeholder="Nhập câu hỏi, đáp án, giải thích...">
+        </label>
+      </div>
+
+      <div class="admin-status" id="statusBox">Đang tải dữ liệu...</div>
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Đề</th>
+              <th>Kỹ năng</th>
+              <th>Part</th>
+              <th>Câu</th>
+              <th>Nội dung</th>
+              <th>Đáp án</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="rowTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <aside class="editor-panel" id="editorPanel">
+      <div class="editor-empty">
+        <h2>Chọn một dòng để sửa</h2>
+        <p>Bạn có thể sửa câu hỏi, lựa chọn A/B/C/D, đáp án đúng, đáp án chấp nhận, giải thích, ảnh/audio và dòng gốc.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
